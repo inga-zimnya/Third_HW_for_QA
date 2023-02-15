@@ -8,6 +8,8 @@ public class Task2 {
 
         int firstChoice = console.nextInt();
         int secondChoice = 0;
+        int number = 0;
+
         double after = 0.0;
         System.out.println("Выберите единицу измерения");
 
@@ -17,36 +19,39 @@ public class Task2 {
             System.out.println("[3] - фунт");
             System.out.println("[4] - карат");
             secondChoice = console.nextInt();
-            switch (secondChoice){
-                case(1):
-                    System.out.println("килограммы: " + secondChoice);
-                    System.out.println("граммы: " + secondChoice * 1000);
-                    System.out.println("фунты: " + secondChoice * 2.204623);
-                    System.out.println("караты: " + secondChoice * 5000);
-                    break;
-                case(2):
-                    after = (double)secondChoice / 1000;
+
+            System.out.println("Введите количество: ");
+            number = console.nextInt();
+
+            switch (secondChoice) {
+                case (1) -> {
+                    System.out.println("килограммы: " + number);
+                    System.out.println("граммы: " + number * 1000);
+                    System.out.println("фунты: " + number * 2.204623);
+                    System.out.println("караты: " + number * 5000);
+                }
+                case (2) -> {
+                    after = (double) number / 1000;
                     System.out.println("килограммы: " + after);
                     System.out.println("граммы: " + after * 1000);
                     System.out.println("фунты: " + after * 2.204623);
                     System.out.println("караты: " + after * 5000);
-                    break;
-                case(3):
-                    after = (double)secondChoice / 2.204623;
+                }
+                case (3) -> {
+                    after = (double) number / 2.204623;
                     System.out.println("килограммы: " + after);
                     System.out.println("граммы: " + after * 1000);
                     System.out.println("фунты: " + after * 2.204623);
                     System.out.println("караты: " + after * 5000);
-                    break;
-                case(4):
-                    after = (double)secondChoice / 5000;
+                }
+                case (4) -> {
+                    after = (double) number / 5000;
                     System.out.println("килограммы: " + after);
                     System.out.println("граммы: " + after * 1000);
                     System.out.println("фунты: " + after * 2.204623);
                     System.out.println("караты: " + after * 5000);
-                    break;
-                default:
-                    System.out.println("Вы написали неправильное значение");
+                }
+                default -> System.out.println("Вы написали неправильное значение");
             }
         }else if(firstChoice == 2){
             System.out.println("[1] - метр");
@@ -54,36 +59,39 @@ public class Task2 {
             System.out.println("[3] - ярд");
             System.out.println("[4] - фут");
             secondChoice = console.nextInt();
-            switch (secondChoice){
-                case(1):
-                    System.out.println("метры: " + secondChoice);
-                    System.out.println("миля: " + (double)secondChoice * 0.000621);
-                    System.out.println("ярды: " + (double)secondChoice * 1.093613);
-                    System.out.println("футы: " + (double)secondChoice * 3.28084);
-                    break;
-                case(2):
-                    after = (double)secondChoice / 0.000621;
+
+            System.out.println("Введите количество: ");
+            number = console.nextInt();
+
+            switch (secondChoice) {
+                case (1) -> {
+                    System.out.println("метры: " + number);
+                    System.out.println("миля: " + (double) number * 0.000621);
+                    System.out.println("ярды: " + (double) number * 1.093613);
+                    System.out.println("футы: " + (double) number * 3.28084);
+                }
+                case (2) -> {
+                    after = (double) number / 0.000621;
                     System.out.println("метры: " + after);
-                    System.out.println("миля: " + (double)after * 0.000621);
-                    System.out.println("ярды: " + (double)after * 1.093613);
-                    System.out.println("футы: " + (double)after * 3.28084);
-                    break;
-                case(3):
-                    after = (double)secondChoice / 1.093613;
+                    System.out.println("миля: " + (double) after * 0.000621);
+                    System.out.println("ярды: " + (double) after * 1.093613);
+                    System.out.println("футы: " + (double) after * 3.28084);
+                }
+                case (3) -> {
+                    after = (double) number / 1.093613;
                     System.out.println("метры: " + after);
-                    System.out.println("миля: " + (double)after * 0.000621);
-                    System.out.println("ярды: " + (double)after * 1.093613);
-                    System.out.println("футы: " + (double)after * 3.28084);
-                    break;
-                case(4):
-                    after = (double)secondChoice / 3.28084;
+                    System.out.println("миля: " + (double) after * 0.000621);
+                    System.out.println("ярды: " + (double) after * 1.093613);
+                    System.out.println("футы: " + (double) after * 3.28084);
+                }
+                case (4) -> {
+                    after = (double) number / 3.28084;
                     System.out.println("метры: " + after);
-                    System.out.println("миля: " + (double)after * 0.000621);
-                    System.out.println("ярды: " + (double)after * 1.093613);
-                    System.out.println("футы: " + (double)after * 3.28084);
-                    break;
-                default:
-                    System.out.println("Вы написали неправильное значение");
+                    System.out.println("миля: " + (double) after * 0.000621);
+                    System.out.println("ярды: " + (double) after * 1.093613);
+                    System.out.println("футы: " + (double) after * 3.28084);
+                }
+                default -> System.out.println("Вы написали неправильное значение");
             }
         }else{
             System.out.println("Вы ввели некорректное значение");
