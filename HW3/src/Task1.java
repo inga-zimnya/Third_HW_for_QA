@@ -10,6 +10,15 @@ public class Task1 {
         //replacing all 'a' characters on 'o'
         System.out.println(sec.replace('a', 'o'));
 
+        //changing string to upper case
+        System.out.println(sec.toUpperCase());
+
+        //changing string to lower case
+        System.out.println(sec.toLowerCase());
+
+        //taking only Java
+        System.out.println(sec.substring(7, 11));
+
 
 
     }
